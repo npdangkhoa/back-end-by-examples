@@ -1,0 +1,2 @@
+cd ./target/classes/
+java -cp /C/Users/knguyen97/.m2/repository/com/hazelcast/hazelcast/3.1/hazelcast-3.1.jar:. com.org.hazelcache05.main.Main
