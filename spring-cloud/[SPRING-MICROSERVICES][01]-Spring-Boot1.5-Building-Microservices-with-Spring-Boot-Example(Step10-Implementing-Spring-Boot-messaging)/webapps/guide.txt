@@ -1,0 +1,9 @@
+Installation via npm:
+	npm install http-server -g
+
+start: client-server
+	http-server
+	access into: http://localhost:8080/
+	
+start: spring boot server:
+ 	access into: http://localhost:8585/greet/
