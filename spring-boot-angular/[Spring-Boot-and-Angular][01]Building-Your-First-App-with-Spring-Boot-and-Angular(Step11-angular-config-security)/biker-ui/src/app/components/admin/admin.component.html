@@ -1,0 +1,22 @@
+<div class="container">
+  <table style>
+    <tr>
+      <td> Owner Name </td>
+      <td> Email </td>
+      <td> Model </td>
+      <td> Purchase Price </td>
+
+    </tr>
+    <tr *ngFor='let biker of bikers'>
+      <td> 
+        <a [routerLink]="['view', biker.id]">
+          {{biker.name}}
+        </a> 
+      </td>
+      <td> {{biker.email}} </td>
+      <td> {{biker.model}} </td>
+      <td> {{biker.purchasePrice}} </td>
+
+    </tr>
+  </table>
+</div>

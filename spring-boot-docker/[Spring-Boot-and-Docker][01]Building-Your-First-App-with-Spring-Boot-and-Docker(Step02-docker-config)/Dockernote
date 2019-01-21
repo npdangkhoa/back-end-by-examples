@@ -1,0 +1,45 @@
+##################################################
+#Defining a docker image with Dockerfile
+##################################################
+
+$ cd [Spring-Boot-and-Docker][01]Building-Your-First-App-with-Spring-Boot-and-Docker(Step02-docker-config)
+$ touch Dockerfile
+
+
+##################################################
+# Building the Docker image
+##################################################
+
+$ docker build -t bikers-demo .
+$ docker image ls
+
+##################################################
+#Running the docker image
+##################################################
+
+$ docker run -p 5000:8080 bikers-demo
+
+##################################################
+#Pushing the docker image to docker hub
+##################################################
+
+
+$ docker login
+Login with your Docker ID to push and pull images from Docker Hub. If you don't have a Docker ID, head over to https://hub.docker.com to create one.
+Username (npdangkhoa): npdangkhoa
+Password:
+Login Succeeded
+
+
+##################################################
+#Tag the image
+##################################################
+$ docker tag bikers-demo npdangkhoa/bikers-demo:0.0.1-SNAPSHOT
+$ docker image ls
+$ docker push npdangkhoa/bikers-demo:0.0.1-SNAPSHOT
+
+
+##################################################
+#Pulling the image from docker hub and running it
+##################################################
+docker run -p 5000:8080 npdangkhoa/bikers-demo:0.0.1-SNAPSHOT
