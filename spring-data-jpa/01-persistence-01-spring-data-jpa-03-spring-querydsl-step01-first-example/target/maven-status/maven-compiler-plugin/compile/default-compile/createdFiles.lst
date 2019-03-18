@@ -1,0 +1,5 @@
+com\boraji\tutorial\spring01\entities\PhoneType.class
+com\boraji\tutorial\spring03\repository\ContactRepository.class
+com\boraji\tutorial\spring01\entities\Contact.class
+com\boraji\tutorial\spring04\domain\ContactSpecifications.class
+com\boraji\tutorial\spring00\config\AppConfig.class
