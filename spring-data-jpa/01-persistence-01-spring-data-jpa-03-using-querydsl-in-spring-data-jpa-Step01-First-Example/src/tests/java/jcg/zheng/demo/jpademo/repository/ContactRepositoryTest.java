@@ -22,8 +22,8 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.domain.Specifications;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.boraji.tutorial.spring00.config.AppConfig;
-import com.boraji.tutorial.spring01.entities.Contact;
+import com.spring00.config.AppConfig;
+import com.spring01.entities.Contact;
 
 
 // TODO: Fixed error when run with SpringRunner.class
