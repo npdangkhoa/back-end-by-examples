@@ -1,0 +1,37 @@
+<div class="container">
+  <div *ngIf="bikerReg ==undifined">Loading....</div>
+  <!--add ngIf wait for the object is loaded--->
+  <div class="row"  *ngIf="bikerReg">
+    <a class="btn btn=primary" routerLink="/admin">Back to List</a>
+  <div>
+    <div class="form-group">
+      <label>Buyer Name</label>
+      <div class="form-control">{{bikerReg.name}}</div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <div class="form-control">{{bikerReg.email}}</div>
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <div class="form-control">{{bikerReg.phone}}</div>
+    </div>
+    <div class="form-group">
+      <label>Bike Model</label>
+      <div class="form-control">{{bikerReg.model}}</div>
+    </div>
+    <div class="form-group">
+      <label>Bike Serial Number</label>
+      <div class="form-control">{{bikerReg.serialNumber}}</div>
+    </div>
+    <div class="form-group">
+      <label>Purchase Price</label>
+      <div class="form-control">{{bikerReg.purchasePrice}}</div>
+    </div>
+    <div class="form-group">
+      <label>Purchase Date</label>
+      <div class="form-control">{{bikerReg.purchaseDate}}</div>
+    </div>
+  </div>
+</div>
+</div>
